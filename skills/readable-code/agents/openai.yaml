@@ -1,0 +1,7 @@
+interface:
+  display_name: "Readable Code"
+  short_description: "Write and review code that is easy to follow"
+  icon_small: "./assets/readable-code.png"
+  icon_large: "./assets/readable-code.png"
+  brand_color: "#10B981"
+  default_prompt: "Use $readable-code to refactor this code so it is easier to read."
