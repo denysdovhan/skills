@@ -1,6 +1,6 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
-  "name": "agents",
+  "name": "dd-skills",
   "version": "1.0.0",
   "description": "Commit focused changes, maintain decision logs, debug runtime behavior, and write readable code.",
   "author": {
@@ -20,8 +20,8 @@
         "category": "Developer Tools",
         "brandColor": "#52525B",
         "brandColorDark": "#52525B",
-        "composerIcon": "./assets/dd-skills.png",
-        "logo": "./assets/dd-skills.png",
+        "composerIcon": "./assets/dd-skills.svg",
+        "logo": "./assets/dd-skills.svg",
         "capabilities": [
           "Focused Git commits",
           "Decision logs",

@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/dd-skills.png" alt="DD Skills icon" width="128" height="128">
+  <img src="assets/dd-skills.svg" alt="DD Skills icon" width="128" height="128">
 </p>
 
 # DD Skills [![GitHub Actions][gh-actions-image]][gh-actions-url]
@@ -24,13 +24,13 @@ codex plugin marketplace add denysdovhan/agents
 ```
 
 Open the Plugins Directory, select the DD Skills marketplace, and install
-`agents`. Restart the desktop app if the new source is not visible.
+`dd-skills`. Restart the desktop app if the new source is not visible.
 
 ### Claude Code
 
 ```sh
 claude plugin marketplace add denysdovhan/agents
-claude plugin install agents@agents
+claude plugin install dd-skills@dd-skills
 ```
 
 For local testing, replace the GitHub shorthand with this repository's absolute path.

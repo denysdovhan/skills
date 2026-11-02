@@ -1,5 +1,5 @@
 {
-  "name": "agents",
+  "name": "dd-skills",
   "owner": {
     "name": "Denys Dovhan",
     "url": "https://github.com/denysdovhan",
@@ -7,7 +7,7 @@
   },
   "plugins": [
     {
-      "name": "agents",
+      "name": "dd-skills",
       "source": "./",
       "description": "Commit focused changes, maintain decision logs, debug runtime behavior, and write readable code."
     }

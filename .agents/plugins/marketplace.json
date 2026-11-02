@@ -1,9 +1,9 @@
 {
-  "name": "agents",
+  "name": "dd-skills",
   "interface": { "displayName": "DD Skills" },
   "plugins": [
     {
-      "name": "agents",
+      "name": "dd-skills",
       "source": { "source": "local", "path": "./" },
       "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
       "category": "Developer Tools"
