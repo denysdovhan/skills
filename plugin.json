@@ -13,15 +13,15 @@
   "extensions": {
     "com.openai": {
       "interface": {
-        "displayName": "Agent Skills",
+        "displayName": "DD Skills",
         "shortDescription": "Everyday development skills",
         "longDescription": "Four skills for focused Git commits, decision logs in .agents/log, runtime debugging with temporary probes, and readable code.",
         "developerName": "Denys Dovhan",
         "category": "Developer Tools",
-        "brandColor": "#F05032",
-        "brandColorDark": "#F05032",
-        "composerIcon": "./assets/git.png",
-        "logo": "./assets/git.png",
+        "brandColor": "#52525B",
+        "brandColorDark": "#52525B",
+        "composerIcon": "./assets/dd-skills.png",
+        "logo": "./assets/dd-skills.png",
         "capabilities": [
           "Focused Git commits",
           "Decision logs",

@@ -1,4 +1,8 @@
-# Agent Skills [![GitHub Actions][gh-actions-image]][gh-actions-url]
+<p align="center">
+  <img src="assets/dd-skills.png" alt="DD Skills icon" width="128" height="128">
+</p>
+
+# DD Skills [![GitHub Actions][gh-actions-image]][gh-actions-url]
 
 This repository stores custom AI-agent skills made for
 [Denys Dovhan](https://github.com/denysdovhan). They capture repeatable
@@ -19,7 +23,7 @@ After running this command, select the required skill in the CLI prompt.
 codex plugin marketplace add denysdovhan/agents
 ```
 
-Open the Plugins Directory, select the Agent Skills marketplace, and install
+Open the Plugins Directory, select the DD Skills marketplace, and install
 `agents`. Restart the desktop app if the new source is not visible.
 
 ### Claude Code

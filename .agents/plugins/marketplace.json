@@ -1,6 +1,6 @@
 {
   "name": "agents",
-  "interface": { "displayName": "Agent Skills" },
+  "interface": { "displayName": "DD Skills" },
   "plugins": [
     {
       "name": "agents",
