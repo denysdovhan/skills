@@ -6,7 +6,7 @@ description: Readable code rules inspired by The Art of Readable Code, for any l
 # Readable Code Rules (/readable-code)
 
 Apply these rules when writing, reviewing, or refactoring code. Inspired by
-*The Art of Readable Code* by Dustin Boswell and Trevor Foucher.
+_The Art of Readable Code_ by Dustin Boswell and Trevor Foucher.
 
 **Core principle: Code should be easy to understand.** The time it takes someone
 else (or future you) to understand the code is the ultimate metric.
@@ -119,8 +119,8 @@ if (!isEligible) {
   the function, extract it.
 - The helper function should be **pure and self-contained** — it shouldn't need
   to know about the calling context.
-- This is the single most effective way to improve readability: separate *what*
-  you're doing from *how*.
+- This is the single most effective way to improve readability: separate _what_
+  you're doing from _how_.
 
 ## 7. One Task at a Time
 
@@ -193,7 +193,7 @@ if (!isEligible) {
   function instead.
 - **Prefer one-line helper calls** over long inline chains that the formatter
   will expand vertically.
-- The formatter is your reader's first impression. Run it *before* committing —
+- The formatter is your reader's first impression. Run it _before_ committing —
   if the result looks ugly, that's a signal to refactor, not to disable the
   formatter.
 
@@ -224,15 +224,11 @@ const users = await getActiveUsers(db, 20);
 ```ts
 // Bad: inline lookup chain — Prettier expands it to 5+ lines
 const config = Object.fromEntries(
-  requiredKeys.map((key) => [
-    key,
-    settings[key] ?? defaults[key] ?? fallbacks[key],
-  ]),
+  requiredKeys.map((key) => [key, settings[key] ?? defaults[key] ?? fallbacks[key]]),
 );
 
 // Good: extract the lookup
-const resolveSetting = (key: string) =>
-  settings[key] ?? defaults[key] ?? fallbacks[key];
+const resolveSetting = (key: string) => settings[key] ?? defaults[key] ?? fallbacks[key];
 
 const entries = requiredKeys.map((key) => [key, resolveSetting(key)]);
 const config = Object.fromEntries(entries);

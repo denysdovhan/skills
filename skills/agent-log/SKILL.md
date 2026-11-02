@@ -5,7 +5,7 @@ description: Use this skill to maintain an agent log in .agents/log, a decision 
 
 # Agent Log
 
-Maintain `.agents/log/` — a version-controlled journal of product and engineering decisions, tradeoffs, and directions, co-owned by the developer and agents. Entries capture *why* — the reasoning that code and git history cannot recover.
+Maintain `.agents/log/` — a version-controlled journal of product and engineering decisions, tradeoffs, and directions, co-owned by the developer and agents. Entries capture _why_ — the reasoning that code and git history cannot recover.
 
 ## Layout
 
@@ -80,9 +80,9 @@ what the code or git history already states.
 `index.md` holds a single markdown table:
 
 ```markdown
-| Date | Name | Status |
-|---|---|---|
-| 2026-07-07 | [Dark mode toggle](2026-07-07-dark-mode-toggle.md) | done |
+| Date       | Name                                               | Status |
+| ---------- | -------------------------------------------------- | ------ |
+| 2026-07-07 | [Dark mode toggle](2026-07-07-dark-mode-toggle.md) | done   |
 ```
 
 Use the linked name as the short description. Keep paths, tradeoffs, and other details in the entry itself. Keep entries sorted newest first. Update the index whenever an entry is created, renamed, or its status changes.
@@ -173,13 +173,13 @@ the living document.
 
 ## Handling Feedback During Implementation
 
-| Feedback | Action |
-|---|---|
-| Clarification question | Answer, citing entries; no log change |
-| Bug in the implementation | Fix it; note it in Implementation Notes |
-| Missed constraint or edge case | Append to Questions & Answers and Verification; adjust Decision if it changes |
-| Refinement, reversal, or diff comment for the current feature | Update the `wip` entry, even when it replaces an interim choice |
-| Clearly separate feature or standalone decision | Create a new entry linking related prior entries |
+| Feedback                                                      | Action                                                                        |
+| ------------------------------------------------------------- | ----------------------------------------------------------------------------- |
+| Clarification question                                        | Answer, citing entries; no log change                                         |
+| Bug in the implementation                                     | Fix it; note it in Implementation Notes                                       |
+| Missed constraint or edge case                                | Append to Questions & Answers and Verification; adjust Decision if it changes |
+| Refinement, reversal, or diff comment for the current feature | Update the `wip` entry, even when it replaces an interim choice               |
+| Clearly separate feature or standalone decision               | Create a new entry linking related prior entries                              |
 
 When uncertain which type it is, state your assumptions and ask.
 

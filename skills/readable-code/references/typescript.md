@@ -28,7 +28,10 @@ general list.
 const names = users.filter((user) => user.isActive).map((user) => user.name);
 
 // Bad: too much going on
-const result = groups.flatMap((g) => g.items).filter((i) => i.valid && i.type === "A").reduce((acc, i) => ({ ...acc, [i.id]: transform(i) }), {});
+const result = groups
+  .flatMap((g) => g.items)
+  .filter((i) => i.valid && i.type === "A")
+  .reduce((acc, i) => ({ ...acc, [i.id]: transform(i) }), {});
 
 // Good: break it up
 const validItems = getValidItems(groups, "A");
@@ -64,9 +67,7 @@ const result = Object.fromEntries(entries);
 
 ```ts
 // Bad: sequential when it doesn't need to be, nested callbacks
-fetchUser(id).then((user) =>
-  fetchOrders(id).then((orders) => render(user, orders)),
-);
+fetchUser(id).then((user) => fetchOrders(id).then((orders) => render(user, orders)));
 
 // Good
 const [user, orders] = await Promise.all([fetchUser(id), fetchOrders(id)]);
@@ -98,9 +99,7 @@ type Request = {
 
 // Good: each state is explicit
 type Request =
-  | { status: "loading" }
-  | { status: "error"; error: Error }
-  | { status: "success"; data: User };
+  { status: "loading" } | { status: "error"; error: Error } | { status: "success"; data: User };
 ```
 
 ## 21. Use Options Objects Instead of Positional Flags
@@ -129,7 +128,15 @@ createUser({ name, email, sendWelcomeEmail: true, isAdmin: false });
 // Bad
 return (
   <div>
-    {isLoading ? <Spinner /> : error ? <ErrorView error={error} /> : items.length ? <List items={items} /> : <Empty />}
+    {isLoading ? (
+      <Spinner />
+    ) : error ? (
+      <ErrorView error={error} />
+    ) : items.length ? (
+      <List items={items} />
+    ) : (
+      <Empty />
+    )}
   </div>
 );
 

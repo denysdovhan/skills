@@ -1,0 +1,16 @@
+{
+  "name": "agents",
+  "owner": {
+    "name": "Denys Dovhan",
+    "url": "https://github.com/denysdovhan",
+    "email": "denysdovhan@gmail.com"
+  },
+  "plugins": [
+    {
+      "name": "agents",
+      "source": "./",
+      "description": "Commit focused changes, maintain decision logs, debug runtime behavior, and write readable code."
+    }
+  ],
+  "description": "Commit focused changes, maintain decision logs, debug runtime behavior, and write readable code."
+}

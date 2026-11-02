@@ -15,21 +15,21 @@ This repository contains reusable agent skills:
 
 ## Build, Test, and Development Commands
 
-Run all validation before finishing skill changes:
+Run all checks before finishing changes:
 
 ```bash
-./scripts/validate-skills.sh
+make check
 ```
 
-This bootstraps `skills-ref` into `.skill-ref/skills-ref` if needed and
-validates every skill under `skills/`. To validate one skill directly after the
-bootstrap exists, run:
+Run validation without formatting:
 
 ```bash
-.skill-ref/skills-ref/.venv/bin/skills-ref validate skills/commit
+make validate
 ```
 
-There is no build step; this is a documentation and asset repository.
+Requires Make, Node.js 24+, uv, and Claude Code. Run `make install` to install hooks.
+The scripts validate skills, plugin schemas, and marketplace consistency.
+There is no build step.
 
 ## Coding Style & Naming Conventions
 
@@ -48,7 +48,7 @@ When creating or substantially updating skills, all agents must use the
 Validation is schema-based through `skills-ref`; there are no unit tests or
 coverage targets. Add or update assets and references only when they are used by
 a skill or its metadata. After changing `SKILL.md`, metadata, references, or
-assets, run `./scripts/validate-skills.sh` and `git diff --check`.
+assets, run `make validate` and `git diff --check`.
 
 ## Commit & Pull Request Guidelines
 

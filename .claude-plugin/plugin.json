@@ -1,0 +1,18 @@
+{
+  "name": "agents",
+  "version": "1.0.0",
+  "description": "Commit focused changes, maintain decision logs, debug runtime behavior, and write readable code.",
+  "author": {
+    "name": "Denys Dovhan",
+    "url": "https://github.com/denysdovhan",
+    "email": "denysdovhan@gmail.com"
+  },
+  "repository": "https://github.com/denysdovhan/agents",
+  "license": "MIT",
+  "displayName": "Agent Skills",
+  "icon": "./assets/git.png",
+  "homepage": "https://github.com/denysdovhan/agents#readme",
+  "keywords": ["agent-skills", "git", "debugging", "code-readability", "decision-log"],
+  "documentationUrl": "https://github.com/denysdovhan/agents#readme",
+  "supportUrl": "https://github.com/denysdovhan/agents/issues"
+}

@@ -1,0 +1,43 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "agents",
+  "version": "1.0.0",
+  "description": "Commit focused changes, maintain decision logs, debug runtime behavior, and write readable code.",
+  "author": {
+    "name": "Denys Dovhan",
+    "url": "https://github.com/denysdovhan",
+    "email": "denysdovhan@gmail.com"
+  },
+  "repository": "https://github.com/denysdovhan/agents",
+  "license": "MIT",
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Agent Skills",
+        "shortDescription": "Everyday development skills",
+        "longDescription": "Four skills for focused Git commits, decision logs in .agents/log, runtime debugging with temporary probes, and readable code.",
+        "developerName": "Denys Dovhan",
+        "category": "Developer Tools",
+        "brandColor": "#F05032",
+        "brandColorDark": "#F05032",
+        "composerIcon": "./assets/git.png",
+        "logo": "./assets/git.png",
+        "capabilities": [
+          "Focused Git commits",
+          "Decision logs",
+          "Runtime debugging",
+          "Readable code"
+        ],
+        "websiteURL": "https://github.com/denysdovhan/agents#readme",
+        "supportURL": "https://github.com/denysdovhan/agents/issues",
+        "defaultPrompt": [
+          "Prepare a focused commit for my changes.",
+          "Use agent-log to record this engineering decision.",
+          "Debug this runtime issue with temporary probes."
+        ]
+      }
+    }
+  },
+  "homepage": "https://github.com/denysdovhan/agents#readme",
+  "keywords": ["agent-skills", "git", "debugging", "code-readability", "decision-log"]
+}
