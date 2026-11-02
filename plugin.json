@@ -8,7 +8,7 @@
     "url": "https://github.com/denysdovhan",
     "email": "denysdovhan@gmail.com"
   },
-  "repository": "https://github.com/denysdovhan/agents",
+  "repository": "https://github.com/denysdovhan/skills",
   "license": "MIT",
   "extensions": {
     "com.openai": {
@@ -28,8 +28,8 @@
           "Runtime debugging",
           "Readable code"
         ],
-        "websiteURL": "https://github.com/denysdovhan/agents#readme",
-        "supportURL": "https://github.com/denysdovhan/agents/issues",
+        "websiteURL": "https://github.com/denysdovhan/skills#readme",
+        "supportURL": "https://github.com/denysdovhan/skills/issues",
         "defaultPrompt": [
           "Prepare a focused commit for my changes.",
           "Use agent-log to record this engineering decision.",
@@ -38,6 +38,6 @@
       }
     }
   },
-  "homepage": "https://github.com/denysdovhan/agents#readme",
+  "homepage": "https://github.com/denysdovhan/skills#readme",
   "keywords": ["agent-skills", "git", "debugging", "code-readability", "decision-log"]
 }

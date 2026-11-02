@@ -7,5 +7,5 @@ Skill instruction: [**`SKILL.md`**](SKILL.md)
 ## Install
 
 ```bash
-npx skills add denysdovhan/agents --skill interactive-debugging
+npx skills add denysdovhan/skills --skill interactive-debugging
 ```

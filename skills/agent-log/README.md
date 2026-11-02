@@ -7,5 +7,5 @@ Skill instruction: [**`SKILL.md`**](SKILL.md)
 ## Install
 
 ```bash
-npx skills add denysdovhan/agents --skill agent-log
+npx skills add denysdovhan/skills --skill agent-log
 ```

@@ -12,7 +12,7 @@ available across local agent sessions.
 ## Installation
 
 ```bash
-npx skills add denysdovhan/agents
+npx skills add denysdovhan/skills
 ```
 
 After running this command, select the required skill in the CLI prompt.
@@ -20,7 +20,7 @@ After running this command, select the required skill in the CLI prompt.
 ### Codex
 
 ```sh
-codex plugin marketplace add denysdovhan/agents
+codex plugin marketplace add denysdovhan/skills
 ```
 
 Open the Plugins Directory, select the DD Skills marketplace, and install
@@ -29,7 +29,7 @@ Open the Plugins Directory, select the DD Skills marketplace, and install
 ### Claude Code
 
 ```sh
-claude plugin marketplace add denysdovhan/agents
+claude plugin marketplace add denysdovhan/skills
 claude plugin install dd-skills@dd-skills
 ```
 
@@ -74,5 +74,5 @@ from their separate repository.
 
 <!-- Badges -->
 
-[gh-actions-image]: https://img.shields.io/github/actions/workflow/status/denysdovhan/agents/validate.yml?branch=main&style=flat-square
-[gh-actions-url]: https://github.com/denysdovhan/agents/actions/workflows/validate.yml
+[gh-actions-image]: https://img.shields.io/github/actions/workflow/status/denysdovhan/skills/validate.yml?branch=main&style=flat-square
+[gh-actions-url]: https://github.com/denysdovhan/skills/actions/workflows/validate.yml
